@@ -1,19 +1,15 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import './App.css';
-import Nav from './Nav';
-
 
 
 
 
 function App() {
-  return(
-    <div>
-      <Nav/>
-      <h1 className="title">Hello hi hi React</h1>
+  return (
+    <div className="App">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem praesentium iste dolor obcaecati soluta? Tenetur, atque repellendus. Quod suscipit eum incidunt minus eos possimus.</p>
     </div>
-  );
+  )
 }
 
 export default App;
