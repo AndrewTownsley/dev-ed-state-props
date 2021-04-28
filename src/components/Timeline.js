@@ -1,18 +1,19 @@
-import { render } from '@testing-library/react';
 import React from 'react';
 // import components...
 import Tweet from './Tweet';
 
 function Timeline(props) {
-  const name = 'Andrew Townsley';
+  const tweets = [
+    {name: 'Andrew', tweet: 'React is super duper'},
+    {name: 'Ed', tweet: 'Hello Hello'},
+    {name: 'Dee', tweet: 'Learning to Code'}]
   return(
     <section>
-      <h2>Your Timeline:</h2>
-      <h3>{props.me}</h3>
-      <h3>{props.job}</h3>
-      <Tweet username = {name} />
+      {tweets.map((tweet) => (
+        <Tweet name={tweet.name} tweet={tweet.tweet} />
+      ))}
     </section>
-  )
+  );
 }
 
 export default Timeline;
