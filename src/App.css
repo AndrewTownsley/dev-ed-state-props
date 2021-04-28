@@ -6,10 +6,15 @@
 }
 
 .home {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
   min-height: 100vh;
   background-color: rgb(28, 29, 65);
   color: #fff;
+}
+
+.active {
+  transition: 0.6s ease;
+  color: rgb(165, 1, 180);
+  text-decoration: underline solid 6px #000;
 }

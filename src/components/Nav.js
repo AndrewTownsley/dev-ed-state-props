@@ -1,15 +1,12 @@
 import React from 'react';
 
-function Nav() {
+const Nav = (props) => {
+  // Add state here....
   return(
+
     <nav>
-      <h1>Hello m8</h1>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Services</li>
-      </ul>
+      {props.toggle ? <h3>Logo nav</h3> : ''} 
+      
     </nav>
   );
 }
