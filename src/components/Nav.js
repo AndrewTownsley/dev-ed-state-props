@@ -2,7 +2,7 @@ import React from 'react';
 
 function Nav() {
   return(
-    <nav className="Nav">
+    <nav>
       <h1>Hello m8</h1>
       <ul>
         <li>Home</li>
@@ -14,4 +14,4 @@ function Nav() {
   );
 }
 
-export default Nav
+export default Nav;
